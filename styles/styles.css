@@ -1,0 +1,838 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sixtyfour&family=Sixtyfour+Convergence&display=swap');
+
+
+/* General reset and body styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+html{
+    scroll-behavior: smooth;
+}
+h2{
+    text-transform: uppercase;
+}
+a{
+    text-decoration: none;
+}
+/* Header and Navigation---------------------------------------------------------------- */
+.header {
+    width: 100%;
+    text-align: center;
+}
+.headerTop {
+    width: 100%;
+    padding: 25px 50px 25px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #002147;
+}
+.headerBottom {
+    width: 100%;
+    padding: 25px 50px 25px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(209, 227, 255);
+}
+.nav {
+    display: flex;
+    gap: 30px;
+}
+.nav a {
+    color: #002147;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+}
+.headerTop a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    gap: 10px;
+}
+.nav a:hover, .headerTop a:hover {
+    color: #00BFFF;
+}
+.mobileContainer {
+    width: 100%;
+    display: flex;
+    height: 50px;
+    background-color: #ffffff;
+}
+
+.mobileNav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+.burgerLinks a {
+    font-weight: 600;
+}
+.burgerLinks a:hover {
+    color: #008080;
+}
+
+/* Initially hide the burger links */
+
+#burgerLinks {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    opacity: 0;
+    transform: translateX(10%); 
+    visibility: hidden;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0s 0.3s; 
+}
+#burgerLinks.active {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0s; 
+    color: #008080;
+}
+#burgerLogo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    opacity: 0;
+    transform: translateX(-10%); 
+    visibility: hidden;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0s 0.3s; 
+}
+#burgerLogo.active {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0s; 
+}
+
+/* Sections--------------------------------------------------------------- */
+.main {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Home Section -----------------------------------------------------------------*/
+.home {
+    background-color: rgb(209, 227, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.colHomeLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+.colHomeRight{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.detail-box{
+    padding-bottom: 100px;
+}
+.detail-box h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #00BFFF;
+    margin-bottom: 25px;
+    max-width: 400px;
+}
+.detail-box p {
+    margin-bottom: 30px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    max-width: 500px;
+    color: #008080;
+}
+.home button {
+    background-color: #3CB371;
+    color: #fff;
+    border: 1px solid #3CB371;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
+    
+}
+.home button:hover {
+    background-color: transparent;
+    color: #008080;
+
+}
+/* CARD SECTION ------------------------------------------------------------------------------------ */
+.cardSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-50%);
+}
+.cardContainer{
+    display: flex;
+}
+.box{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 10px;
+    padding: 20px 95px;
+    background-color: #ffff;
+    color: #555089;
+    box-shadow:  0 0 15px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+.box:hover, .box:active{
+    background-color: #3CB371;
+    color: #fff;
+}
+.box img{
+    width: 128px;
+    height: auto;
+}
+.box p {
+    font-size: 25px;
+    font-weight: 400px;
+}
+
+/* About Section ----------------------------------------------------------------------------------*/
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.about .row{
+    gap: 40px;
+}
+.colAboutLeft{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+.colAboutRight{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.colAboutRight .imgBox img {
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+}
+.about h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #002147;
+}
+.about p {
+    margin-bottom: 30px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    max-width: 450px;
+}
+.about button {
+    background-color: #002147;
+    color: #fff;
+    border: 1px solid #002147;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
+}
+.about button:hover{
+    background-color: transparent;
+    color: #002147;
+}
+
+/* Pool Cleaning Section------------------------------------------------------------------ */
+.pool-cleaning{
+    background-color: rgb(209, 227, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.pool-cleaning .row {
+    gap: 80px;
+}
+.colCleanLeft .imgBox img {
+    transform: translateY(5%);
+}
+.colCleanLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+.colCleanRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+.pool-cleaning h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+.pool-cleaning p {
+    margin-bottom: 1rem;
+}
+.pool-cleaning button {
+    background-color: #3CB371;
+    color: #fff;
+    border: 1px solid #3CB371;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
+}
+.pool-cleaning button:hover {
+    background-color: transparent;
+    color: #008080;
+}
+
+/* Services Section -----------------------------------------------------------------------------------------*/
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px 50px 0px;
+}
+.services .container {
+    flex-direction: column;
+}
+.colServices{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.colServices, .box:hover p {
+    color: #fff;
+}
+.colServices .box {
+    padding: 10px 10px 10px 10px;
+}
+.colServices .box .imgBox img {
+    width: 128px;
+    height: auto;
+}
+.services .detail-box {
+    padding-bottom: 0px;
+}
+.services h2 {
+    font-size: 50px;
+    margin-bottom: 80px;
+    color: #002147;
+}
+.services h5 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+.services p {
+    font-size: 1rem;
+    font-weight: 400;
+    max-width: 300px;
+    padding: 10px 10px 0px 10px;
+}
+.services button {
+    background-color: #002147;
+    color: #fff;
+    border: 1px solid #002147;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
+}
+.services button:hover {
+    background-color: transparent;
+    color: #002147;
+}
+
+/* Reviews Section --------------------------------------------------*/
+.reviews{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+.reviews .container {
+    display: flex;
+    flex-direction: column;
+}
+.reviews .row {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+    gap: 30px;
+}
+.reviews .detail-box {
+    padding: 0px;
+    text-align: left;
+    max-width: 400px;
+    max-height: 100px;
+}
+.colReviews{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.boxRev {
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #ffff;
+    color: #555089;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+.starBox{
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    
+}
+.profilePic{
+    padding-right: 20px
+}
+.profilePic Img {
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+}
+.star img {
+    width: 24px;
+}
+.profileData{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.reviews h2 {
+    font-size: 50px;
+    margin-bottom: 80px;
+    color: #002147;
+}
+
+
+
+/* ---- */
+
+
+
+/* Contact Section */
+.contact{
+    max-width: 1170px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+.contact .container {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact .container .row {
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.colContacte {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.colContacte form div input{
+    width: 100%;
+    border: none;
+    height: 50px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    padding-left: 25px;
+    background-color: #ffffff;
+    outline: none;
+    color: #002147;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
+}
+.colContacte form div input.message-box{
+    height: 150px;
+}
+.map iframe {
+    border-radius: 20px;
+}
+
+.contact h2 {
+    font-size: 50px;
+    margin-bottom: 80px;
+    color: #002147;
+}
+
+.contact form button {
+    background-color: #002147;
+    color: #fff;
+    border: 1px solid #002147;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
+}
+.contact form button:hover {
+    background-color: transparent;
+    color: #002147;
+}
+.contact iframe {
+    margin-top: 1rem;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+/* INFO--------------------------------- */
+
+.info {
+    background-color: #002147;
+    display: flex;
+    justify-content: center;
+}
+
+.info h2 {
+    margin-top: 50px;
+    font-size: 30px;
+    margin-bottom: 80px;
+    color: #ffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.info .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+}
+.rowInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    width: inherit;
+}
+.colFooter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.colSocial{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 50px;
+    margin-bottom: 50px;
+    color: #ffffff;
+}
+.info .fa-solid {
+    padding: 30px;
+    background-color: #008080;
+    border: 1px solid #008080;
+    border-radius: 15px;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 20px;
+}
+.info .fa-solid:hover{
+    background-color: transparent;
+    border: 1px solid #008080;
+}
+.fa-brands{
+    padding: 30px;
+    border-radius: 15px;
+    transition: all 0.2s ease-in-out;
+}
+
+/* MEDIA Q --------------------------------------------------------------- */
+/* Standard navigation styling */
+.nav {
+    display: flex; 
+    gap: 30px;
+}
+
+/* Mobile screens (max-width: 767px) */
+
+@media (max-width: 767px) {
+    .burgerLogo{
+        display: none;
+    }
+    .burgerLinks{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mobileNav .burgerButton{
+        font-size: 30px;
+    }
+    header {
+        position: fixed;
+        z-index: 100;
+        box-shadow: #002147 0px 0px 10px 1px;
+    }
+    main {
+        padding-top: 40px;
+    }
+    .fa fa-bars {
+        font-size: 50px;
+    }
+    .nav {
+        display: none; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(209, 227, 255);
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        z-index: 1;
+    }
+    .nav.active {
+        display: flex;
+    }
+    .headerTop, .headerBottom {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 15px;
+    }
+    .container, .row, .colHomeLeft, .colHomeRight, .colAboutLeft, .colAboutRight,
+    .colServices, .colContacte, .colReviews, .cardContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        text-align: center;
+    }
+    .box, .boxRev, .colContacte form div input {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .imgBox img {
+        max-width: 100%;
+        height: auto;
+    }
+    .detail-box h1{
+        max-width: unset;
+    }
+    .detail-box p {
+        width: 100%;
+        text-align: center;
+        padding: 0px 40px;
+    }
+    .boxRev {
+        height: 100%;
+        min-height: 310px;
+    }
+}
+
+
+/* General styles for small screens */
+@media (max-width: 767px) {
+    .headerBottom {
+        display: none;
+    }
+
+    .headerTop, .headerBottom, .nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    .nav a {
+        font-size: 18px;
+        padding: 5px 0;
+        color: #002147;
+    }
+    .detail-box h1, .about h2, .services h2, .reviews h2, .contact h2, .info h2 {
+        font-size: 2rem;
+    }
+    .container, .row, .colHomeLeft, .colHomeRight, .colAboutLeft, .colAboutRight,
+    .colServices, .colContacte, .colReviews {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .box, .colContacte form div input {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .colCleanLeft img {
+        display: none;
+    }
+    .colCleanRight .detail-box {
+        padding-bottom: 0px;
+    }
+    .colServices{
+        width:300px;
+        height: 320px;
+    }
+    .boxRev {
+        padding: 20px;
+        width: 90%;
+        align-items: center;
+    }
+    .reviews .detail-box {
+        max-height: unset;
+    }
+    .reviews .detail-box p {
+        margin-bottom: 0px;
+    }
+    .starBox {
+        padding-top: 5px;
+    }
+    .starBox .detail-box p {
+        font-size: 1rem;
+    }
+    .imgBox img {
+        max-width: 100%;
+        height: auto;
+    }
+    .services button, .contact form button {
+        padding: 10px 20px;
+    }
+    .cardSection {
+        transform: translateY(-10%);
+    }
+    .colAboutLeft{
+        margin-top: 0px;
+    }
+    .colAboutRight .imgBox img {
+        display: none;
+    }
+    .colCleanRight{
+        text-align: center;
+    }
+    .detail-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .boxFooter {
+        padding: 0px;
+    }
+    .colFooter:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Tablet screens (768px and above) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .mobileContainer {
+        display: none;
+    }
+    .nav a {
+        font-size: 20px;
+    }
+    .colHomeLeft, .colHomeRight, .colAboutLeft, .colAboutRight {
+        flex: 1;
+        padding: 10px;
+    }
+    .detail-box h1 {
+        font-size: 2.5rem;
+    }
+    .box, .boxRev {
+        padding: 15px;
+    }
+}
+
+/* Larger screens (desktop) */
+@media (min-width: 1025px) {
+
+    .mobileContainer {
+        display: none;
+    }
+    .hamburger {
+        display: none;
+    }
+    .nav {
+        display: flex;
+    }
+}
+
+
+/* ------------------------------------------------------------------------- */

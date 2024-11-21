@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PoolCleaning</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    
+<body>
+    
+
+    <header class="header">
+        <div class="headerTop">
+            <a href="tel:0738639465"><i class="fa-solid fa-phone" style="color: #ffffff;"></i><p>Tel: 0738639465</p></a>
+            <a href="mailto:mail.mail@mail.mail"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i><p>Email: companie@gmail.com</p></a>
+        </div>
+        <div class="headerBottom">
+            <h2>LOGO</h2>
+            <nav class="nav">
+                <a href="#home" onclick="navigateTo('home')" id="homeBtn">Acasa</a>
+                <a href="#about" onclick="navigateTo('about')" id="aboutBtn">Despre Noi</a>
+                <a href="#services" onclick="navigateTo('services')" id="servicesBtn">Servicii</a>
+                <a href="#contact" onclick="navigateTo('contact')" id="contactBtn">Contactați-ne</a>
+              </nav>
+        </div>
+
+        <div class="mobileContainer">
+
+            <div class="mobileNav">
+                <!-- <a href="#home" class="burgerLogo" id="burgerLogo">Logo</a> -->
+                <div class="burgerLinks" id="burgerLinks">
+                    <a href="#home">Acasa</a>
+                    <a href="#about">Despre Noi</a>
+                    <a href="#services">Servicii</a>
+                    <a href="#contact">Contactați-ne</a>
+                </div>
+                <a href="#" class="burgerButton" id="burgerButton"><i class="fa fa-bars"></i></a>
+            </div>
+            
+        </div>
+
+        
+    </header>
+
+    <main class="main">
+      
+        <section id="home" class="home">
+            <div class="container">
+                <div class="row">
+                    <div class="colHomeLeft">
+                        <div class="detail-box">
+                            <h1>Curațare și Mențenanța Piscinelor</h1>
+                            <p>Ca specialist în întreținerea și curățarea piscinelor, asigur un serviciu complet pentru menținerea piscinei tale într-o stare impecabilă pe tot parcursul anului.
+                                
+                            </p>
+                            <button onclick="navigateTo('contact')" class="contactButton">Contactați-ne</button>
+                        </div>
+                    </div>
+                    <div class="colHomeRight">
+                        <img src="assets/img/slider-img.png" alt="Services" class="homeImg">
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </section>
+
+        <section id="cardSection" class="cardSection">
+            <div class="container">
+                <div class="cardContainer">
+                    <div class="box">
+                        <div class="imgBox"><img src="/assets/icons/fix.png" alt=""></div>
+                        <p>Repară</p>
+                    </div>
+                    <div class="box">
+                        <div class="imgBox"><img src="/assets/icons/cleaning.png" alt=""></div>
+                        <p>Curăță</p>
+                    </div>
+                    <div class="box">
+                        <div class="imgBox"><img src="/assets/icons/pool-maintenance.png" alt=""></div>
+                        <p>Menține</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+        <section id="about" class="about">
+            <div class="container">
+                <div class="row">
+                    <div class="colAboutLeft">
+                        <div class="detail-box">
+                            <h2>Despre Noi</h2>
+                            <p>
+                                La NUME, oferim servicii de curățare și întreținere a piscinelor la cele mai înalte standarde. Cu o experiență vastă și echipamente moderne, ne asigurăm că fiecare piscină rămâne impecabil de curată și sigură pentru întreaga familie. Punem accent pe detalii și folosim soluții prietenoase cu mediul, pentru un rezultat care îmbină calitatea cu responsabilitatea. Suntem dedicați să oferim un serviciu rapid, eficient și personalizat!
+                            </p>
+                            <button onclick="navigateTo('about')" class="aboutBtn">Descopera mai multe</button>
+                        </div>
+                    </div>
+                    <div class="colAboutRight">
+                        <div class="imgBox">
+                            <img src="/assets/img/pool-cleaning-330399_1280.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pool-cleaning" class="pool-cleaning">
+            <div class="container">
+                <div class="row">
+                    <div class="colCleanLeft">
+                        <div class="imgBox">
+                            <img src="/assets/img/professional-img.png" alt="">
+                        </div>
+                    </div>
+                    <div class="colCleanRight">
+                        <div class="detail-box">
+                            <h1>Serviciile Noastre</h1>
+                            <p>Serviciile noastre complete de curățare și întreținere a piscinelor asigură un mediu de înot sănătos, limpede și mereu pregătit pentru relaxare. Ne ocupăm de îndepărtarea impurităților din apă și de pe fundul piscinei, echilibrăm nivelurile chimice pentru a menține apa sigură și plăcută, și verificăm constant funcționarea optimă a sistemului de filtrare și pompare. Prin tratamente speciale, prevenim formarea algelor și bacteriilor, contribuind la menținerea unei piscine igienice și atractive pe termen lung. Cu atenție la detalii și profesionalism, oferim întreținerea necesară pentru o piscină gata să impresioneze oricând.</p>
+                            <button onclick="navigateTo('services')" class="services">Vezi Servicii</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+        <section id="services" class="services">
+            <div class="container">
+                <div class="heading-container">
+                    <h2>Servicii</h2>
+                </div>
+                <div class="row">
+                    <div class="colServices">
+                        <div class="box">
+                            <div class="imgBox">
+                                <img src="/assets/icons/equipment.png" alt="">
+                            </div>
+                            <div class="detail-box">
+                                <h5>Reparații</h5>
+                                <p>Preturile reparatiilor vor fi stabilite la fata locului sau estimate telefonic</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="colServices">
+                        <div class="box">
+                            <div class="imgBox">
+                                <img src="/assets/icons/tools (1).png" alt="">
+                            </div>
+                            <div class="detail-box">
+                                <h5>Curățare</h5>
+                                <p>Curatare piscine/bazine incepand de la "lei"/mp</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="colServices">
+                        <div class="box">
+                            <div class="imgBox">
+                                <img src="/assets/icons/maintenance.png" alt="">
+                            </div>
+                            <div class="detail-box">
+                                <h5>Mentenanță</h5>
+                                <p>Mentenanta periodica oferita, pentru mai multe detalii, lasa-ne un mesaj</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </div>
+                <div class="btnBox">
+                    <button onclick="navigateTo('services')" class="services">Descopera</button>
+                </div>
+            </div>
+        </section>
+
+        
+
+
+        <section id="reviews" class="reviews">
+            
+            <div class="container">
+
+                <div class="heading-container">
+                    <h2>Ce spun clientii nostri</h2>
+                </div>
+
+                <div class="row">
+                    <div class="colReviews">
+                        <div class="boxRev">
+                            <div class="starBox">
+                                <div class="profilePic">
+                                    <img src="/assets/img/portrait1.png" alt="">
+                                </div>
+                                <div class="profileData">
+                                    <div class="name">
+                                        <h5>Stefania</h5>
+                                    </div>
+                                    <div class="star">
+                                        <img src="/assets/icons/star.png" alt="">
+                                        <img src="/assets/icons/star.png" alt="">
+                                        <img src="/assets/icons/star.png" alt="">
+                                        <img src="/assets/icons/star.png" alt="">
+                                        <img src="/assets/icons/starE.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="detail-box">
+                                <p>Lorem ipsum dolor, sit amet consectetur adillum obcaecati aliquam nihil officiis! Ipsam obcaecati accusamus cumque quis non itaque error facilis quod ex!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="colReviews">
+                        <div class="boxRev">
+                            <div class="starBox">
+                                <div class="profilePic">
+                                    <img src="/assets/img/portrait2.png" alt="">
+                                </div>
+                                <div class="profileData">
+                                    <div class="name">
+                                        <h5>Alexandra</h5>
+                                    </div>
+                                    <div class="star">
+                                        <img src="/assets/icons/star.png" alt="">
+                                        <img src="/assets/icons/star.png" alt="">
+                                        <img src="/assets/icons/star.png" alt="">
+                                        <img src="/assets/icons/starE.png" alt="">
+                                        <img src="/assets/icons/starE.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="detail-box">
+                                <p>Lorem, ipsum dolor sit amet consectdoloribus incidunt ad odio voluptatem quibusdam. Numquam et, aperiam harum ex obcaecati soluta quasi rem totam incidunt quae!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="colReviews">
+                        <div class="boxRev">
+                            <div class="starBox">
+                                <div class="profilePic">
+                                    <img src="/assets/img/portrait3.png" alt="">
+                                </div>
+                                <div class="profileData">
+                                    <div class="name">
+                                        <h5>George</h5>
+                                    </div>
+                                    <div class="star">
+                                        <img src="/assets/icons/star.png" alt="">
+                                        <img src="/assets/icons/star.png" alt="">
+                                        <img src="/assets/icons/star.png" alt="">
+                                        <img src="/assets/icons/star.png" alt="">
+                                        <img src="/assets/icons/starE.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="detail-box">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisdit aut, nobis adipisci ut officiis quas officia ratione amet exercitationem laborum ab similique necessitatibus soluta!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="colReviews">
+                        <div class="boxRev">
+                            <div class="starBox">
+                                <div class="profilePic">
+                                    <img src="/assets/img/portrait4.png" alt="">
+                                </div>
+                                <div class="profileData">
+                                    <div class="name">
+                                        <h5>Marius</h5>
+                                    </div>
+                                    <div class="star">
+                                        <img src="/assets/icons/star.png" alt="">
+                                        <img src="/assets/icons/star.png" alt="">
+                                        <img src="/assets/icons/star.png" alt="">
+                                        <img src="/assets/icons/star.png" alt="">
+                                        <img src="/assets/icons/starE.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="detail-box">
+                                <p>Lorem ipsum dolor, sit amet iandae, assumenda hic optio dolores. Eveniet dicta modi debitis blanditiis veritatis fugiat sequi fugit aspernatur mollitia.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="heading-container">
+                    <h2>Contacteaza-ne</h2>
+                </div>
+                <div class="row">
+                    <div class="colContacte">
+                        <form action="">
+                            <div>
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                            <div>
+                                <input type="tel" placeholder="Phone Number" required>
+                            </div>
+                            <div>
+                                <input type="email" placeholder="Email" required>
+                            </div>
+                            <div>
+                                <input type="text" class="message-box" placeholder="Message" required>
+                            </div>
+                            <div class="d-flex ">
+                                <button>
+                                    SEND
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="colContacte">
+                        <div class="mapContainer">
+                            <div class="map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.74148751606!2d25.437288509518353!3d44.92860595145447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b2f6a9bb51d1cd%3A0x38df5956b3afb775!2sRondo%20Farm!5e1!3m2!1sen!2sro!4v1731262201570!5m2!1sen!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info">
+            <div class="container">
+                <div class="heading-container">
+                    <h2>Contactează-ne</h2>
+                </div>
+                <div class="rowInfo">
+                    <div class="colFooter">
+                        <div class="boxFooter">
+                            <a href=""><i class="fa-solid fa-location-dot fa-2xl" style="color:#ffff"></i></a>
+                            <p>Lorem ipsum is a dummy text</p>
+                        </div>
+                        <div class="boxFooter">
+                            <a href="tel:0738639465"><i class="fa-solid fa-phone fa-2xl" style="color:#ffff"></i></a>
+                            <p>Tel: 0738639465</p>
+                        </div>
+                        <div class="boxFooter">
+                            <a href=""><i class="fa-solid fa-envelope fa-2xl" style="color:#ffff"></i></a>
+                            <p>Email: companie@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="colSocial">
+                        <div class="boxFooter">
+                            <a href=""><i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i></a>
+                        </div>
+                        <div class="boxFooter">
+                            <a href=""><i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i></a>
+                        </div>
+                        <div class="boxFooter">
+                            <a href="whatsapp://send?text=Hello World!&phone=+40735963980"><i class="fa-brands fa-whatsapp fa-2xl" style="color: #ffffff;"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </section>
+
+    </main>
+
+    <script src="exe.js" defer></script>
+    <script src="https://kit.fontawesome.com/c139686304.js" crossorigin="anonymous"></script>
+</body>
+</html>
